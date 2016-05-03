@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
-});
+// Route::get('/', function () {
+    
+// });
+Route::resource('/', 'HomeController');
 Route::resource('planos', 'PlanosController');
+Route::resource('contato', 'ContatoController');
